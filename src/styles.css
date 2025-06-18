@@ -1,0 +1,56 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f9ff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.app {
+  padding: 2rem;
+}
+
+.game-container {
+  margin-top: 2rem;
+}
+
+.info p {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+.game-area {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape {
+  width: 80px;
+  height: 80px;
+  background-color: #ff5c5c;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: pop 0.3s ease-in-out;
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0.5; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.reset-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background: #00bfa5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reset-btn:hover {
+  background: #009688;
+}
